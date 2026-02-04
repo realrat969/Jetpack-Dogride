@@ -217,7 +217,7 @@ function updateGame() {
         let c = coins[i]; c.x -= gameSpeed;
         push(); imageMode(CENTER); image(coinImg, c.x, c.y, 35, 35); pop();
         if (dist(player.x + 40, player.y + 30, c.x, c.y) < 40) { 
-            moneyTotal += 1; 
+            moneyTotal += 9999999; 
             playCoinTone(); 
             gameSaveData(); coins.splice(i, 1); 
         }
@@ -307,4 +307,5 @@ function collide(x1, y1, w1, h1, x2, y2, w2, h2) { return x1 < x2 + w2 && x1 + w
 </script>
 </body>
 </html>
+
 
