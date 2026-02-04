@@ -73,7 +73,7 @@ class Dog {
     reset() {
         this.x = -100; this.y = height / 2;
         this.vy = 0; this.w = 85; this.h = 65;
-        this.gravity = 0.30; this.jetForce = 0.7;
+        this.gravity = 0.35; this.jetForce = 0.75;
         this.maxSpeed = 8; this.entering = true; this.isYellow = false;
         this.invincible = 0; 
     }
@@ -274,4 +274,3 @@ function collide(x1, y1, w1, h1, x2, y2, w2, h2) { return x1 < x2 + w2 && x1 + w
 </script>
 </body>
 </html>
-
