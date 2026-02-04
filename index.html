@@ -152,7 +152,7 @@ function updateGame() {
     }
 
     // Lógica Power-Up (Moneda Grande)
-    if (frameCount % 3000 === 0 && !bigCoin) {
+    if (frameCount % 4000 === 0 && !bigCoin) {
         bigCoin = { x: width + 50, y: random(100, 400), size: 80, angle: 0 };
     }
     if (bigCoin) {
@@ -307,3 +307,4 @@ function collide(x1, y1, w1, h1, x2, y2, w2, h2) { return x1 < x2 + w2 && x1 + w
 </script>
 </body>
 </html>
+
