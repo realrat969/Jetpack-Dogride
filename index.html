@@ -360,7 +360,7 @@ function updateGame(frozen) {
     }
 
     if (!frozen && distance > 70) { 
-        if (distance >= 100 && gameTimer % 6000 == 0) {
+        if (distance >= 100 && gameTimer % 4000 == 0) {
             // BURST MODE - 9 red lasers with 0.3 second (18 frame) stagger
             for (let i = 0; i < 9; i++) {
                 redLasers.push({ targetY: player.y + player.h/2, timer: 180 + i * 18, x: width });
